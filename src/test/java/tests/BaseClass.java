@@ -22,7 +22,6 @@ public class BaseClass {
 	public void setup () {
 		
 		try {
-		
 		DesiredCapabilities cap = new DesiredCapabilities();
 		
 		cap.setCapability("chromedriverExecutable","C:\\chromedriver\\chromedriver.exe");
@@ -50,5 +49,4 @@ public class BaseClass {
 		driver.close();
 		driver.quit();
 	}
-
 }

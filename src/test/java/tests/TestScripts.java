@@ -60,25 +60,5 @@ public class TestScripts extends BaseClass {
 		favIcon.click();
 	}
 	
-	@Given("the news application is open and I navigate to home page")
-	public void newsAppStartFlow () throws InterruptedException {
-		common.newsAppStartFlow();
-	}	
-	
-	@And("I select news and save it in favorites")
-	public void saveToFavortiesFlow () throws InterruptedException {
-		common.clickByXpath("//*[@text='General']");
-		common.clickByXpath("//*[@text='ABC News']");
-		common.clickByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.CheckBox");
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-	}
-	
-	@Then("I check if is stored in favorites list")
-	public void checkInFavorites () throws InterruptedException {
-		MobileElement favIcon = driver.findElement(By.xpath("//android.widget.FrameLayout[@content-desc=\"Favorites\"]/android.widget.ImageView"));
-		favIcon.click();
-	}
-	
-	
 }
 	

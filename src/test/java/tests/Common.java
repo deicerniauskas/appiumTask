@@ -99,19 +99,5 @@ public class Common {
 	    }
 	}
 
-	private WaitOptions waitOptions(Object ofMillis) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	private Object ofMillis(int i) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	private PointOption point(int startPoint, int anchor) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 }
